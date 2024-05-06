@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meal-Finder-App</title>
+  <!-- link css -->
+  <link rel="stylesheet" href="style.css">
+  <!-- font awsome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- bootstrap link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- main container -->
+  <div id="full-body">
+
+    <!-- header section -->
+    <div id="header" class="contianer-fluid">
+      <!-- navbar -->
+      <div id="nav" class="navbar bg-success fixed-top">
+        <div class="container-fluid">
+          <!-- title/logo -->
+          <a href="index.html" class="navbar-brand">Meal-App</a>
+          <!-- menu bar for favourite meals -->
+          <button class="navbar-toggler" type="button" onclick="toggleFavMealList()">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- favourite item container -->
+          <div id="offcanvasNavbar" class="offcanvas offcanvas-end" tabindex="-1" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header bg-success">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color: white;">
+                Favorites
+              </h5>
+              <button class="btn-close" type="button" onclick="closeFavMealList()"></button>
+            </div>
+            <!-- favorite items -->
+            <div id="favourites-body" class="offcanvas-body d-flex justify-content-center flex-wrap">
+              <div class="spinner-border text-success" role="status">
+                <span class="sr-only">Loading...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- main heading -->
+      <div id="heading" class="container text-center">
+        <h1>Search Your Meal..</h1>
+      </div>
+      <!-- search bar -->
+      <div id="search-bar" class="container text-center mt-5" onkeyup="showMealList()">
+        <input type="search" id="my-search" class="form-control" placeholder="Search meal...">
+      </div>
+      <!-- search result -->
+      <div id="heading-text" class="mt-3 text-center">
+        <h5>Your Meals:</h5>
+      </div>
+      <!-- all meal section -->
+      <div id="main" class="d-flex justify-content-around container flex-wrap mt-5">
+
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

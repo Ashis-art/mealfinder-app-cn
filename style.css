@@ -1,0 +1,81 @@
+/* importing roboto font family from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Resetting default margin, padding, and box-sizing for all elements */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* setting styles for body */
+body{
+    width: 100%;
+    background-color: #555758 !important;
+    color: white;
+}
+
+#heading{
+    margin-top: 70px;
+}
+
+#search-bar{
+    max-width: 500px;
+}
+
+/* styling the input inside the search bar */
+#search-bar input{
+    height: 50px;
+    border-radius: 15px;
+}
+
+/* styling the meal cards */
+#card{
+    background-color: #198754;
+    padding: 10px;
+    color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* styling the images inside the meal card */
+#card img{
+    border-radius: 50%;
+}
+
+#meal-details{
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #198754;
+}
+
+#meal-header{
+    width: 70%;
+    margin: auto;
+}
+
+/* styling the images inside meal thumbnail */
+#meal-thumbnail img{
+    height: 250px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+/* styling the meal details section */
+#details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+}
+
+#meal-instruction{
+    margin: auto;
+    text-align: center;
+}
+
+/* styling the favourite list body */
+#favourites-body{
+    background-color: #212529;
+}
